@@ -1,3 +1,3 @@
 # datavis20
----
-Data Visualization 2020, Design Intelligence, Yonsei University
+
+Data Visualization 2020S, Design Intelligence, Yonsei University
