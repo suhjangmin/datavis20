@@ -7,9 +7,93 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            .jumbotron {
+                color: #fff;
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("https://images.unsplash.com/photo-1545483656-1a34ae73add1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+                background-size: cover;
+                height: 350px;
+            }
+            * {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            p{    
+                line-height: 1.8;   
+            }
+    
+            h2 {
+                margin: 80px 0 30px 0;
+            }
+            blockquote {
+                margin: 0 auto;
+                padding: 1em;
+                border-left: 5px solid #999;
+            }
+    
+            blockquote:before {
+                display: none;
+            }
+    
+            blockquote:not(:first-of-type) {
+                margin-top: .5em;
+            }
+    
+            blockquote p {
+                color: #555;
+                font-size: 12pt;
+                line-height: 1.4;
+                font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+            }
+    
+            blockquote footer {
+                margin-top: .5em;
+                padding: 0;
+                color: #777;
+                font-size: 12pt;
+                text-align: left;
+                font-style: italic;
+            }
+    
+            blockquote footer:before {
+                content: '— ';
+            }
+    
+            blockquote:nth-of-type(even) {
+                text-align: right;
+                border-left: none;
+                border-right: 5px solid #999;
+            }
+    
+            blockquote:nth-of-type(even) footer {
+                text-align: right;
+            }
+    
+            blockquote:nth-of-type(even) footer:before {
+                content: '';
+            }
+    
+            blockquote:nth-of-type(even) footer:after {
+                content: ' —';
+            }
+    
+            @element 'blockquote'and (min-width: 300px) {
+                blockquote {
+                    padding: 1em 20% 1em 1em;
+                }
+    
+                blockquote p {
+                    font-size: 14pt;
+                }
+    
+                blockquote:nth-of-type(even) {
+                    padding: 1em 1em 1em 20%;
+                }
+            }
+        </style>
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
-        <title>test</title>
+        
+        <title>접근성으로 바라본 21대 총선 장애인 참정권 보장 실태</title>
     </head>
 
     <body>
@@ -31,36 +115,269 @@
 
         <!-- Main Container -->
         <div class="container">
-
-            <!-- Begin 기사 제목 줄-->
-            <div class="row">
-                <div class="col">
-                    <p>
-                        <h2>
-                            기사 제목
-                        </h2>
-                    </p>
+            <div class="card border-1 shadow my-4">
+                <div class="card-body p-5">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="col">
+                            <h1 class="display-5">접근성으로 바라본 21대 총선 장애인 참정권 보장 실태</h1>
+                            <p class="tlead">2020. 04. 15 현지윤</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="first">&quot;못하겠어요. 도저히&quot;</h2>
+                            <p>역대 총선에서의 장애인 투표율은 15대 총선 60.1%, 16대 66.4%, 17대 72.9%로 지속적으로 상승하는 추세이다. 그러나 실제로 장애인들의 참정권은 제대로
+                                보장받고
+                                있을까? 2017년 대선
+                                당시의
+                                <a href="https://news.v.daum.net/v/20170502194139458?f=p">채널동아 보도</a>에 따르면, 시각장애인들은 내용이 부실한
+                                점자 공보물과
+                                제대로 활용할 수 없는
+                                QR코드 공보물 때문에 참정권을 침해당했다.</p>
+                            <p>21대 총선을 치른 2020년, 중앙선거관리위원회에서도 이러한 문제를 인식하고 있다. 실제로 선관위는 <a
+                                    href="https://www.nec.go.kr/portalVt/bbs/view/B0000342/40428.do?menuNo=200602&amp;searchWrd=%EC%9E%A5%EC%95%A0%EC%9D%B8&amp;searchCnd=1&amp;viewType=&amp;pageIndex=1&amp;section=&amp;searchOption1=">2020년
+                                    2월 보도자료</a>에서 장애인단체와 함께 전국 14,000여개 투표소와 3,500여개 사전투표소에 대해 전수조사를 실시하여, 99.5%의 투표소에서 1층
+                                혹은 승강기 설비
+                                시설을 확보하는 등
+                                장애인유권자의 투표 편의를 확대했다고 밝혔다. 그러나 실제로 선관위의 보도대로 장애인 참정권 제한 문제가 해결되었을까? 데이터를 통해 이를 살펴보았다.</p>
+                            <p></p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="second">시각장애인들이 꺼리는 QR코드 선거공보물</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <figure>
+                                <img src="http://newsroom.etomato.com/userfiles/2020-04-09.jpg" alt="총선에 제공된 공보물"
+                                    class="figure-img img-fluid rounded">
+                                <figcaption>이번 총선에 제공된 공보물. 일부 공보물 상단에 인쇄용 바코드가 첨부돼 있다. 사진출처: 뉴스토마토 박용준기자</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-6">
+                            <blockquote>
+                                <p>시각장애인인 A씨는 선관위 홈페이지에서 후보자 자료를 내려 받아 읽어보려고 했지만, 내려 받은 PDF 파일이 이미지 형식으로 제공돼 있어 읽을 수가 없었다.
+                                    시각장애인들은
+                                    텍스트를 인식해 소리로
+                                    출력되는
+                                    ‘센스 리더’란 화면 낭독 프로그램을 사용하는데, 이미지 형식은 이 프로그램이 인식하지 못하기 때문이다. [<a
+                                        href="https://news.chosun.com/site/data/html_dir/2020/03/03/2020030302052.html">출처</a>]
+                                </p>
+                                <p>&quot;어느 위치에 인쇄돼 있는지 [표시도 없고] 또 보려면 보조기구도 사용해야 하는데… &quot;
+                                    <footer class="blockquote-footer">김훈, 시각장애 1급 유권자[<a
+                                            href="https://news.v.daum.net/v/20170502194139458?f=p">출처</a>]</footer>
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>사회 인식 개선과 수차례의 법 개정으로 점자공보물 제공은 의무화됐다. 제작비용도 전액 국고 지원하면서 이번 총선 서울지역 후보 229명 중 228명, 지난 총선 당시
+                                205명 중
+                                204명이 점자공보물 혹은 QR코드를 제공하고 있다.</p>
+                            <div class='tableauPlaceholder' id='viz1587007487141' style='width: 800px; height:40px;'>
+                                <noscript><a href='#'><img alt=' '
+                                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_15870073557850&#47;sheet2&#47;1_rss.png'
+                                            style='border: none' /></a></noscript><object class='tableauViz' width='800'
+                                    height='40' style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                    <param name='embed_code_version' value='3' />
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='Book2_15870073557850&#47;sheet2' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image'
+                                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_15870073557850&#47;sheet2&#47;1.png' />
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='filter' value='publish=yes' /></object></div>
+                            <script
+                                type='text/javascript'>                    var divElement = document.getElementById('viz1587007487141'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (250) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            <p>문제는, 기존 공보물에 QR코드[보이스아이]를 제공할 경우 점자공보물을 만들지 않아도 된다는 것이다. 덧붙여 시각장애인을 위한 점자형 공보물 제출·작성 또한
+                                &#39;지역구
+                                후보&#39;에게만 의무일
+                                뿐, 비례정당의 경우는 예외다 [<a
+                                    href="http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002630061">출처</a>].
+                                <strong>실제로 21대 총선에서는 후보자들이 점자 공보물 대신 QR코드를 제공하는 비율이 많이 높아졌다. 지난 총선 당시 205명 중 18명으로 8.7%에
+                                    그쳤지만 이번
+                                    총선에선 229명 중 60명으로 26.2%으로 3배 이상 늘었다.</strong> </p>
+                            <p>
+                                <strong>실제 시각장애인들은 앱 사용에 어려움을 보이며 10명 중 1~2명만이 사용 가능하며, QR코드 선거공보물을 배려 없는 탁상행정이라고
+                                    지적한다.</strong> 이연주
+                                한시련 정책팀장은
+                                “저부터
+                                당장 읽으려고 해도 읽을 수 없다. 겉보기에만 좋을 뿐 실제 시각장애인 중 읽을 수 있는 사람은 거의 없다. 누가 이익을 남기기 위해 중간에서 장난쳤을 가능성
+                                있다”고 말했다.
+                                [<a href="https://www.newstomato.com/ReadNews.aspx?no=965520">출처</a>]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="third">여전히 부족한 수어통역사 및 점자유도 블럭</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <blockquote>
+                                <p>2년 전 지방선거에서 사전투표를 하러 갔는데 수어통역사가 없었습니다. 문자로 된 안내문을 읽어도 충분히 이해하기 어려워 수어통역사를 요구하니 공무원은 자꾸
+                                    기다리라고만
+                                    했습니다. 겨우 어렵게
+                                    수어통역사와
+                                    영상통화로 연결이 되었지만 내가 원하는 신속하고 정확한 안내는 받지 못했습니다.... 다신 이렇게 투표하고 싶지 않습니다.”
+                                    <footer class="blockquote-footer">청각장애인 이종운 서울장애인차별철폐연대 대의원 [<a
+                                            href="http://beminor.com/detail.php?number=14557&amp;thread=04r08">출처</a>]
+                                    </footer>
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class='tableauPlaceholder' id='viz1587007640005' style='position: relative'><noscript><a
+                                        href='#'><img alt=' '
+                                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_15870073557850&#47;2020&#47;1_rss.png'
+                                            style='border: none' /></a></noscript><object class='tableauViz'
+                                    style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                    <param name='embed_code_version' value='3' />
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='Book2_15870073557850&#47;2020' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image'
+                                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_15870073557850&#47;2020&#47;1.png' />
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='filter' value='publish=yes' /></object></div>
+                            <script
+                                type='text/javascript'>                    var divElement = document.getElementById('viz1587007640005'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (250) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            <p>서울시의 경우, 지난 2018년 지방선거에서 겨우 25명의 수어통역사만 배치하였고, 세종시는 단 한 명도 배치하지 않았다. 이번 총선 사전투표소 역시 서울시는 총
+                                424곳 중 단
+                                25곳에서만 수어
+                                통역사가
+                                배치됐다. 선거 당일 투표소 2252개 중 49곳만 수어 통역사가 배치돼 현장 투표소에서 안내와 설명을 듣는데 어려움이 예상된다 [<a
+                                    href="https://m.nocutnews.co.kr/news/5327111">출처</a>]. 사전투표 이후 실시된 실제 21대 총선 본투표의 경우 인천
+                                연수구에서는
+                                전체 84개 투표소 중
+                                10개
+                                투표소[11.9%]만이 한국수어 통역사를 배치했다. [<a href="http://info.nec.go.kr/">출처</a>]</p>
+                            <p>시각장애인들의 이동권 보장을 위한 점자유도 블럭의 경우에도 턱없이 부족한 실정이다. 인천 연수구의 경우, 점자유도블록이 있는 투표소는 14개소로 전체 84개 투표소 중
+                                16.67%에
+                                불과했다. [<a href="http://info.nec.go.kr/">출처</a>]</p>
+                            <p>이종운 서울장애인차별철폐연대 대의원은 이에 “과거에 비해 수어통역사를 확대해 배치하겠다고 하나 전체 투표소에 비하면 매우 적다. 이 많은 청각장애인들을 그 적은
+                                인원으로 어떻게
+                                감당하려고 하나. 우리는
+                                이번에도
+                                긴 시간을 기다려야 하는가”라고 일침을 가했다. [<a
+                                    href="http://beminor.com/detail.php?number=14557&amp;thread=04r08">출처</a>]</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="fourth">점점 낮아지는 지적장애·정신지체 장애인 선거참여율</h2>
+                        </div>
+                        <blockquote>
+                            <p>발달장애인은 집으로 온 선거공보물을 이해하기 어렵고, 투표용지엔 글자만 있어서 투표소에 들어갔다가 그냥 나오기도 하며, 아무 데나 무작정 찍기도 합니다. 더 화가 나는
+                                것은
+                                발달장애인이
+                                원하는
+                                후보를
+                                찍어야 하는데, 부모님이나 거주시설 교사가 지정하는 후보를 찍는다는 겁니다. 발달장애인도 투표권을 갖고 있고, 찍고 싶은 사람을 찍었으면 합니다. 그러기 위해서는
+                                쉬운 공보물과
+                                그림
+                                투표용지가
+                                꼭
+                                필요합니다.”
+                                <footer class="blockquote-footer">문윤경 대구 피플퍼스트 활동가 [<a
+                                        href="http://beminor.com/detail.php?number=14557&amp;thread=04r08">출처</a>]</footer>
+    
+                            </p>
+                            <p>“나는 복지관도 다니고 야학도 다니면서 친구들과 선생님을 만난다. 나도 투표할 수 있다. 함부로 말하지 말라”
+                                <footer class="blockquote-footer">노들장애인야학 박성숙씨 [<a
+                                        href="http://beminor.com/detail.php?number=14557&amp;thread=04r08">출처</a>]</footer>
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>2016년도 선관위가 발간한 <a
+                                    href="https://www.nec.go.kr/cmm/dozen/view.do?atchFileId=FILE_000000000150215&amp;fileSn=1">&lt;사회적
+                                    약자의
+                                    선거권
+                                    보장을
+                                    위한 실효성 제고 방안&gt;</a>에 따르면, <strong>정신장애, 지적장애 및 발달장애인들의 투표 참여율은 몇 년째 개선되지 않고
+                                    있다.</strong> 실제로
+                                정신장애인과
+                                지적장애인
+                                투표
+                                참여율의 경우 2005년의 50%대에서 2014년의 40%대로 오히려 낮아졌으며, 발달장애인의 투표권 또한 40%대 초반에 머물러 있다. 전체 장애인 투표율이 같은
+                                기간 소폭
+                                상승한 점을
+                                감안하면
+                                이들의
+                                참정권을 보장하기 위한 적극적인 조치가 필요해보인다. </p>
+                        </div>
+                        <div class='tableauPlaceholder' id='viz1587008818119' style='position: relative'><noscript><a
+                                    href='#'><img alt=' '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_15870073557850&#47;sheet0&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='Book2_15870073557850&#47;sheet0' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_15870073557850&#47;sheet0&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='filter' value='publish=yes' /></object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1587008818119'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (550) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        <p>이에 대한 해결책으로 그림 투표용지를 도입하는 방안이 있지만, 몇 년째 고려되지 않고 있다. 특히 발달장애인의 경우, 글과 숫자를 이해하는 데 어려움이 없는 비장애인 위주로
+                            이뤄져 있는
+                            선거제도를 비판하며 수년째 개선을 요구했지만 여전히 ‘읽기 쉬운 공보물’과 후보자의 사진과 정당 로고가 있는 그림투표용지는 도입되지 않고 있다.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="fifth">장애인 참정권 보장을 위한 해결 방안</h2>
+                            <figure>
+                                <img class="figure-img img-fluid rounded"
+                                    src="http://beminor.com/wys2/file_attach/2020/04/10/1586492665_93789.jpg"
+                                    alt="그림 투표용지 제공하라 서명운동">
+                                <figcaption>문윤경 대구피플퍼스트 활동가가 발달장애인 참정권에 대해 발언하고 있다. 그 뒤로 “공직선거법을 바꾸자. 그림 투표용지 제공하라”고 적힌 피켓이
+                                    보인다. 사진출처: 비마이너 강혜민기자</figcaption>
+                            </figure>
+                            <p>민주주의 국가에서 장애를 이유로 선거 정보 혹은 투표소 접근에 차별이 있는 것은 헌법에 보장된 참정권을 침해하는 중대한 문제이다. 실제로 &#39;장애인차별금지 및
+                                권리구제&#39; 등의 현행
+                                법률은 장애인이 참정권을 행사할 때 차별이 있게 해서는 안 된다고 명시하고 있다.</p>
+                            <p>21대 총선은 접근성 측면에서 아쉬움이 남는 선거였다. 추후 치러질 선거에서는
+                                <ol>
+                                    <li>QR코드 공보물 폐지 및 점자공보물 의무화</li>
+                                    <li>수어통역사 배치 확대 및 점자유도블록 설치 의무화</li>
+                                    <li>정당 로고 및 후보자 사진이 포함된 그림 투표용지 도입</li>
+                                </ol>
+                                등의 조치가 필요하다. 민주주의의 꽃인 선거에서 부당한 이유로 참정권을 제한받는 동료 시민들의 실태를 다시 점검할 필요가 있어 보인다.</p>
+                        </div>
+                    </div>
+                    <p class="lead mb-0">끝</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                        이름
-                    </p>
-                </div>
-            </div>
-            <!-- End of 기사 제목 줄-->
-
-            <hr class="primary">
-
-            <!-- 여기서부터 기사 본문을 작성해주세요 -->
-            <div class="row">
-                <div class="col">
-                    <!-- 1번째 줄 1번째 컬럼-->
-                    .
-                </div>
-            </div>
-
         </div>
         <!-- End of Main Container -->
         
