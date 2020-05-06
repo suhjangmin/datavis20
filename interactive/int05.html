@@ -7,9 +7,250 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            /* 폰트 설정 */
+            @font-face{
+                src: url("img/05/05_fonts/NanumSquareR.ttf");
+                font-family: "nanumR"
+            }
+            @font-face{
+                src: url("img/05/05_fonts/NanumSquareB.ttf");
+                font-family: "nanumB"
+            }
+            @font-face{
+                src: url("img/05/05_fonts/NanumSquareL.ttf");
+                font-family: "nanumL"
+            }
+            @font-face{
+                src: url("img/05/05_fonts/NanumSquareEB.ttf");
+                font-family: "nanumEB"
+            }
+            *{
+                font-family: "nanumR";
+            }
+            h2{
+                font-family: "nanumB";
+                font-size: 30px;
+            }
+            /* 공통 */
+            p{
+                margin: 0;
+            }
+            h3{
+                font-family: "nanumB";
+                margin: 0;
+                padding-top: 80px;
+                padding-bottom: 30px;
+            }
+            .sub_head {
+                padding-top: 120px;
+            }
+            /* 1단:메인 */
+            .col{
+                padding-top: 20px;
+            }
+            .main{
+                margin-top: 10px;
+                vertical-align: baseline;
+            }
+            #start{
+                display: inline-block;
+                width: 350px;
+                margin-left: 40px;
+                text-align: justify;
+                font-size: 16px;
+                line-height: 30px;
+                position: relative;
+                bottom: 25px;
+            }
+            #news_copyright{
+                margin-top: 5px;
+                font-size: 13px;
+                color: #868e96;
+            }
+            /* 2단:사례 */
+            .first_story{
+                border: 1px solid #707070;
+                padding-top: 65px;
+                padding-bottom: 65px;
+                padding-left: 90px;
+                padding-right: 90px;
+            }
+            #news_head{
+                text-align: center;
+            }
+            .display{
+                display: inline-block;
+                padding-left: 44px;
+                vertical-align: middle;
+            }
+            .display h4{
+                font-family: "nanumB";
+                font-size: 26px;
+                padding-bottom: 5px;
+            }
+            .display p{
+                padding: 0;
+                margin: 0;
+            }
+            .display a{
+                text-decoration: none;
+                color: none;
+            }
+            #name{
+                position: relative;
+                top: 15px;
+                left:78px;
+                font-family: "nanumB";
+                font-size: 15px;
+            }
+            #mention{
+                padding-top: 35px;
+                padding-left: 35px;
+                padding-right: 35px;                
+                text-align: justify;
+                line-height: 30px;
+                font-size: 16px;
+            }
+            #viz1586929877377{
+                margin-top: 40px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* 3단: 초기데이터 */
+            #copyright1{
+                margin: 0;
+                text-align: right;
+                font-size: 13px;
+                color: #868e96;
+                position: relative;
+                right: 15px;
+            }
+            .second_story_img1{
+                margin-top: 15px;
+                margin-right: 40px;
+                text-align: center;
+                display: inline-block;
+            }
+            .second_story_img2{
+                margin-top: 15px;
+                margin-left: 40px;
+                text-align: center;
+                display: inline-block;
+            }
+            .second_story_img1 p{
+                margin-top: 50px;
+                width: 500px;
+            }
+            .second_story_img2 p{
+                margin-top: 50px;
+                width: 500px;
+            }
+            .second_img{
+                text-align: center;
+            }
+            /* 4단:데이터 시각화 */
+            .third_story p{
+                text-align: center;
+            }
+            #viz1586891364933{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            #visual1{
+                display: inline-block;
+                margin-right: 50px;
+            }
+            #visual2{
+                display: inline-block;
+                margin-left: 50px;
+            }
+            #visual{
+                text-align: center;
+            }
+            #cf{
+                font-size: 14px;
+                line-height: 25px;
+                margin-top: 20px;
+                color: #868e96;
+            }
+            .visual_pra{
+                margin-top: 80px;
+                font-size: 25px;
+                line-height: 40px;
+                text-align: center;
+            }
+            /* 5단: 계산 */
+            #viz1586935826497{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #calcu_pra{
+                margin-top: 60px;
+                font-size: 16px;
+            }
+            #calcu_pra2{
+                font-size: 30px;
+                font-family: 'NanumEB';
+                margin-top: 20px;
+            }
+            .forth_story p{
+                text-align: center;
+                line-height: 30px;
+            }
+            .forth_story p:last-child{
+                font-family: "nanumB";
+                font-size: 20px;
+            }
+            #comma {
+                font-size: 30px;
+                font-family: "nanumB";
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            #calcurate{
+                line-height: 35px;
+                font-size: 20px;
+            }
+            .row2{
+                border-top: 1px solid #707070;
+                margin-top: 140px;
+                margin-bottom: 140px;
+            }
+            /* 6단: 결론 */
+            .end{
+                text-align: center;
+                margin-bottom: 130px;
+            }
+            .end h3{
+                font-family: "nanumB";
+                font-size: 30px;
+                padding-top: 0;
+            }
+            .endstory1{
+                margin-bottom: 20px;
+                line-height: 30px;
+            }
+            .endstory2{
+                margin-top: 20px;
+                line-height: 30px;
+            }
+            #copyright2{
+                font-size: 12px;
+                color: #868e96;
+                text-align: center;
+                margin-top: 200px;
+                margin-bottom: 30px;
+            }
+        </style>
 
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
-        <title>페이지 이름</title>
+        <title>[팩트체크] 정말로 대량의 마스크가 중국으로 수출되었는가?</title>
     </head>
 
     <body>
@@ -37,7 +278,7 @@
                 <div class="col">
                     <p>
                         <h2>
-                            기사 제목
+                            [팩트체크] "1~2월 두 달간 6억에서 7억 개의 마스크가 중국으로 갔다?" 
                         </h2>
                     </p>
                 </div>
@@ -45,7 +286,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>
-                        이름
+                        연지현
                     </p>
                 </div>
             </div>
@@ -54,10 +295,70 @@
             <hr class="primary">
 
             <!-- 여기서부터 기사 본문을 작성해주세요 -->
+            <img src="img/05/05_img/mask3.png" width="700px" class="main">
+            <p id="start">코로나19 확진자 폭증 이후, 국내에서 마스크 수요는 폭발적으로 증가하며 현재까지도 마스크 구매에 불편을 겪고 있다. 그 원인으로는 생산능력이 현재 증가된 수요를 감당할 수 없고 초반에 사재기 및 해외 수출을 막지 못한 데 있는 것으로 꼽히고 있다.<br>아래의 사례 기사에 따르면, 코로나19의 전염이 시작되었던 1월부터 2월까지 중국으로 마스크가 대량 수출되었다고 한다. 본 기사에서는 현재의 마스크 구매 어려움의 원인 중 하나인 해외수출 물량을 팩트 체크하고자 한다.</p>
+            <p id="news_copyright">[출처] 이제는 일상생활에서 쉽게 볼 수 있는 마스크를 쓰고 다니는 사람들 © KBS NEWS 포토</p>
+            <h3>사례 기사보기</h3>
+            <div class="first_story">
+                <div id="news_head">
+                    <img src="img/05/05_img/photo.png">
+                    <div class="display">
+                        <h4>"1~2월 두 달간 6억에서 7억 개의 마스크가 중국으로 갔다"</h4>
+                        <p>발췌: <a href="http://www.ilyoseoul.co.kr/news/articleView.html?idxno=373698" target="_blank">원문 기사 바로보기</a></p>
+                    </div>
+                </div>
+                <p id="name">심재철 (정치인)</p>
+                <p id="mention">심 원내대표는 지난 9일 열린 미래통합당 최고위원회의에서 ‘마스크 대란은 문재인 정권의 무능을 대표적으로 보여주는 또 하나의 사례’라고 비판하며, “언론보도에 따르면, 지난해 12월 달에는 중국의 마스크 수출이 60만 달러였다. 그러나 두 달 뒤인 2월 달에는 1억 2천만 달러로 200배가 늘었다. 한 마스크 생산업체 대표가 지난달 말에 인터뷰한걸 보면 ‘1월·2월 두 달간 6억개에서 7억개 정도가 중국에 넘어갔을 것이다’라고 추산하고 있다. 6억에서 7억개이면 5천만 우리 국민이 하루에 하나씩 쓰고도 열흘 넘게 쓸 수 있는 분량이다”라고 말했다.</p>
+            </div>
+            <div class='tableauPlaceholder' id='viz1586929877377' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;VD&#47;VDassignment2_V3&#47;2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:block;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='VDassignment2_V3&#47;2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;VD&#47;VDassignment2_V3&#47;2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586929877377');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='700px';vizElement.style.height=(divElement.offsetWidth*0.58)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <p class="visual_pra">지난 1월~2월 동안 수출된 마스크 물량의 대부분 <b>중국으로 수출</b>되었다.</p>
+            <div class="second_story">
+                <h3 class="sub_head">원형 데이터 확인하기</h3>
+                <p id="copyright1"> 출처: 관세청 수출입무역통계 > 관세청 품목번호(HS코드) 63-07-90-9000</p>
+                <div class="second_img">
+                    <div class="second_story_img1" width="500px">
+                        <img src="img/05/05_img/data1.png" class="img1" width="500px">
+                        <p>▲ 2017년부터 2020년까지 1월과 2월 해당 품목<br>수출 증량 및 수출 금액 원본 데이터</p>
+                    </div>
+                    <div class="second_story_img2" width="500px">
+                        <img src="img/05/05_img/data2.png" class="img2" width="500px">
+                        <p>▲ 2019년 1월부터 2020년 2월까지 해당 품목<br>수출 증량 및 수출 금액 원본 데이터</p>
+                    </div>
+                </div>
+            </div>
+            <div class="third_story">
+                <h3 class="sub_head">해당 데이터 시각화하기</h3>
+                <div class='tableauPlaceholder' id='viz1586891364933' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;41&#47;412_15868911284650&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:block;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='412_15868911284650&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;41&#47;412_15868911284650&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586891364933');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div id=visual>
+                    <div id="visual1">
+                        <div class='tableauPlaceholder' id='viz1586889558578' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4_&#47;4_15868843340540&#47;4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:inline-block;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='4_15868843340540&#47;4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4_&#47;4_15868843340540&#47;4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586889558578');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='500px';vizElement.style.height=(divElement.offsetWidth*0.87)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                    <div id="visual2">
+                        <div class='tableauPlaceholder' id='viz1586889691535' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4_&#47;4_15868843340540&#47;4_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:inline-block;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='4_15868843340540&#47;4_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4_&#47;4_15868843340540&#47;4_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586889691535');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='500px';vizElement.style.height=(divElement.offsetWidth*0.87)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                </div>
+                <p class="visual_pra">2019년과 2020년을 비교하면<br><b>수출물량</b>은 약 <b>50배</b>, <b>금액</b> 기준으로는 <b>133배</b>가 증가한 셈</p>
+                <p id="cf">*2월에 수출중량에 비해 수출금액이 더 늘어난 것은 마스크 수요 증가로 인한 가격 상승이 반영된 것</p>
+            </div>
+            <div class="forth_story">
+                <h3 class="sub_head">분석하기</h3>
+                <div class='tableauPlaceholder' id='viz1586935826497' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;VD&#47;VDassignment2_V4_15869357521610&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='VDassignment2_V4_15869357521610&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;VD&#47;VDassignment2_V4_15869357521610&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1586935826497');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='750px';vizElement.style.height=(divElement.offsetWidth*0.58)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <p id="calcu_pra">해당 기간에 가격폭등을 감안하면 금액비교는 신빙성이 떨어짐.</p>
+                <p id="comma">.<br>.<br>.</p>
+                <p id="calcurate">증가된 수출 물량 (2020년(1~2월) - 2019년(1~2월)) ÷ 5g (마스크 1개당 예상 무게)<br>= (3059t - 62t) ÷ 5g = 2997t ÷ 5g = 5억 9천 9백 4십만 개</p>
+                <p id="calcu_pra2">= 약 6억 개</p>
+            </div>
+            <div class="row2"></div>
+            <div class="end">
+                <h3>CONCULSION</h3>
+                <p class="endstory1">"1~2월 두 달간 6억에서 7억 개의 마스크가 중국으로 갔다"는 숫자만 따지면 틀렸다.<br>하지만, 주장하는 맥락상, '대량의 물량이 중국으로 갔다'는 사실이 마스크 공급과 수요의 불일치 상황을 만들었기 때문에<br>심재철 원내대표의 발언은 <b>대체로 사실로 판명</b>된다.</p>
+                <p class="endstory2">정부는 2월 26일부터 마스크 수출을 통제하는 긴급 조치를 취했고 홍남기 경제부총리 겸 기획재정부 장관은<br>지난 10일 국회 기획재정위원회 전체회의에서 ‘수출금지 조치가 더 일찍 됐으면 좋았을 것이란 생각이 든다’고 말했다.<br>위와 같은 데이터 활용을 통한 마스크 생산업체의 공급과 수요 추이를 정확히 파악하여,<br>정부가 조금 더 빨리 마스크 수출제한 등의 대응에 나섰어야 한다는 지적은 일리가 있다.</p>
+            </div>
+            <p id="copyright2">COPYRIGHT INFORMATION GOES JIHYUN YEON OF YONSEI UNIV © 2020. ALL RIGHTS RESERVED.</p>
+
             <div class="row">
                 <div class="col">
                     <!-- 1번째 줄 1번째 컬럼-->
-                    .
                 </div>
             </div>
 
