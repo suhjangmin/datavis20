@@ -10,9 +10,23 @@
 
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
         <title>페이지 이름</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
     </head>
 
     <body>
+        <script type="module">
+
+            // Load the Observable runtime and inspector.
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            
+            // Your notebook, compiled as an ES module.
+            import notebook from "https://api.observablehq.com/@jeeyoonhyun/bar-chart-race-explained";
+            
+            // Load the notebook, observing its cells with a default Inspector
+            // that simply renders the value of each cell into the provided DOM node.
+            new Runtime().module(notebook, Inspector.into(document.body));
+            
+        </script>
         <!-- Site Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,6 +50,10 @@
                     <p>
                         14
                     </p>
+
+
+                    <div class = "observablehq"></div>
+
                 </div>
             </div>
             
