@@ -1,32 +1,27 @@
 <!doctype html>
 <html lang="ko">
-
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            :root{--syntax_normal:#1b1e23;--syntax_comment:#a9b0bc;--syntax_number:#20a5ba;--syntax_keyword:#c30771;--syntax_atom:#10a778;--syntax_string:#008ec4;--syntax_error:#ffbedc;--syntax_unknown_variable:#838383;--syntax_known_variable:#005f87;--syntax_matchbracket:#20bbfc;--syntax_key:#6636b4;--mono_fonts:82%/1.5 Menlo,Consolas,monospace}.observablehq--collapsed,.observablehq--expanded,.observablehq--function,.observablehq--gray,.observablehq--import,.observablehq--string:after,.observablehq--string:before{color:var(--syntax_normal)}.observablehq--collapsed,.observablehq--inspect a{cursor:pointer}.observablehq--field{text-indent:-1em;margin-left:1em}.observablehq--empty{color:var(--syntax_comment)}.observablehq--blue,.observablehq--keyword{color:#3182bd}.observablehq--forbidden,.observablehq--pink{color:#e377c2}.observablehq--orange{color:#e6550d}.observablehq--boolean,.observablehq--null,.observablehq--undefined{color:var(--syntax_atom)}.observablehq--bigint,.observablehq--date,.observablehq--green,.observablehq--number,.observablehq--regexp,.observablehq--symbol{color:var(--syntax_number)}.observablehq--index,.observablehq--key{color:var(--syntax_key)}.observablehq--prototype-key{color:#aaa}.observablehq--empty{font-style:oblique}.observablehq--purple,.observablehq--string{color:var(--syntax_string)}.observablehq--error,.observablehq--red{color:#e7040f}.observablehq--inspect{font:var(--mono_fonts);overflow-x:auto;display:block;white-space:pre}.observablehq--error .observablehq--inspect{word-break:break-all;white-space:pre-wrap}
+            * {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            p{    
+                line-height: 1.8;   
+            }
+        </style>
 
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
-        <title>페이지 이름</title>
-        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <title>연도별 건축물 미술작품 작가 통계</title>
     </head>
 
     <body>
-        <script type="module">
-
-            // Load the Observable runtime and inspector.
-            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-            
-            // Your notebook, compiled as an ES module.
-            import notebook from "https://api.observablehq.com/@jeeyoonhyun/bar-chart-race-explained";
-            
-            // Load the notebook, observing its cells with a default Inspector
-            // that simply renders the value of each cell into the provided DOM node.
-            new Runtime().module(notebook, Inspector.into(document.body));
-            
-        </script>
         <!-- Site Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,16 +40,31 @@
         <!-- Main Container -->
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <p>
-                        14
-                    </p>
-                    <div class = "observablehq"></div>
-                </div>
+                <div id = "h1"><h1>연도별 건축물 미술작품 작가 통계</h1></div>
+                <div id = "title"></div>
+                <div id = "description"></div>
+                
             </div>
-            
-
+            <div id="chart"></div>
         </div>
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@jeeyoonhyun/bar-chart-race-explained.js?v=3";
+        
+        const runtime = new Runtime();
+        // const main = runtime.module(define, Inspector.into(document.body));
+        const main = runtime.module(define, name => {
+            if (name ===  "title" ) {
+            return new Inspector(document.getElementById('title'));
+          }
+            if (name ===  "description" ) {
+            return new Inspector(document.getElementById('description'));
+            }
+            if (name ===  "chart" ) {
+            return new Inspector(document.getElementById('chart'));
+          }
+        });
+        </script>
         <!-- End of Main Container -->
         
         <!-- 이 아래부터는 무시하세요! -->
