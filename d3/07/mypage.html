@@ -7,9 +7,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <style>
+        /* 폰트 설정 */
+        @font-face{
+            src: url("07/NanumSquareR.ttf");
+            font-family: "nanumR"
+        }
+        @font-face{
+            src: url("07/NanumSquareB.ttf");
+            font-family: "nanumB"
+        }
+        *{
+            font-family: "nanumR"
+        }
+        .contain{
+            width: 900px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            font-size: 24px;
+            font-family: "nanumB";
+            color: #212529;
+            padding-top: 40px;
+        }
+        h2{
+            font-size: 20px;
+            padding-top: 10px;
+            font-family: "nanumB";
+        }
+        p{
+            padding-top: 8px;
+            text-align: justify;
+            line-height: 30px;
+            font-size: 15px;
+        }
+        #subject{
+            font-size: 17px;
+            font-family: "nanumB";
+        }
+        .margin{
+            height: 30px;
+        }
+        svg { 
+            width: 850px; 
+            height: 500px; 
+            border: 0px 
+        }
+        .bar{
+            fill: #868e96;
+            cursor: auto;
+        }
+        .bar2{
+            fill: #ffd43b;
+            cursor: auto;
+        }
+        .bar3{
+            fill: #868e96;
+            cursor: auto;
+        }
+        .barName{
+            font: 9pt "Arial", Arial, Arial, sans-serif;
+            text-anchor: middle;
+        }
+        .axis path,
+        .axis line{
+            fill: none;
+            stroke: black;
+        }
+
+        .row1{
+            border-top: 1px solid #707070;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #1971c2;
+        }
+        sub{
+            color: #868e96;
+            font-size: 15px;
+            line-height: 5px;
+        }
+    </style>
 
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
-        <title>페이지 이름</title>
+        <title>07_Yeon Jihyun</title>
     </head>
 
     <body>
@@ -30,17 +116,75 @@
         <!-- 과제는 여기서 부터 시작입니다 -->
 
         <!-- Main Container -->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p>
-                        07
-                    </p>
-                </div>
+       <div class="contain">
+            <div class="one">
+                <img src="07/img.jpg" width="900px">
+                <h1>배경</h1>
+                <p>
+                    일반적인 개념으로 가정의 기본은 부모와 자녀로 이루어진다. 보편적으로 결혼을 통하여 부부가 되고 자식을 낳아 가정을 이룬다. 이러한 과정 속에서 자식을 낳지 못하는 경우, 대체로 '입양 제도'를 통하여 자식을 얻어 가정을 이루게 된다. 
+                    <br>특히, 한국은 '입양'과 관련하여 특이한 점을 발견할 수 있다. 한국 전쟁 이후 60년이 지난 오늘날, 한국의 경제 수준은 세계 10위권대로 진입하여 여러 분야에서 놀라운 기적을 일으키며 급성장하여 왔고, 복지 또한 수혜국에서 후원국으로 위치가 전환되어 그 역할을 담당하고 있다. 그럼에도 불구하고 한국은 OECD국가 중에서 국외입양을 보내는 유일한 국가에 속한다. 이러한 현황으로 인해, 한국에서는 다양한 입양 제도를 추진해왔다. 
+                </p>
+                <p id="subject">"본 아티클에서는 한국의 국외입양의 비율이 적지 않은 이유와 제도의 도입을 통한 한국의 입양 현황의 변화를 확인해보고자 한다."</p>
+                <h1>한국에는 왜 국외(해외) 입양 사례가 있는 것인가?</h1>
+                <p>
+                    앞서 언급한 것처럼, 한국은 OECD국가 중에서 국외입양을 보내는 유일한 국가에 속한다. 입양 활성화의 목소리가 높아지고 있지만, 여전히 한국에서의 입양 실적은 저조하다. 그 이유는 무엇일까? 
+                    <br>한국에서는 기존의 혈연위주 가족제도로 인한 반감 등으로 인해서 국외 입양의 사례가 지속되었다. 또한, 최근에는 아동의 성별, 건강상태, 연령에 따른 선별적 입양이 주로 이루어지고 있어서, 장애아동, 연장아동, 남아는 입양의 사각지대에 놓여있다. 이러한 편향적인 입양 추세는 국외 입양이 끊이지 않는 이유라고 추론할 수 있다.
+                </p>
+                <h2>지표설명</h2>
+                <p>
+                    ■ 입양아동의 개념
+                    <br>보호자가 없거나 보호자로부터 이탈된 아동 또는 보호자가 아동을 학대하는 경우 등 그 보호자가 아동을 양육하기에 적당하지 아니하거나 양육할 능력이 없는 경우의 아동
+                    <br>cf)「아동복지법」제3조제4호*에 따른 보호대상아동 중 「입양특례법」에 따라 입양된 아동
+                    <br>■ 국내입양 및 국외입양의 개념
+                    <br>○ 국내입양 : 국내로 입양된 아동의 수
+                    <br>○ 국외입양 : 국외로 입양된 아동의 수
+                </p>
             </div>
-            
-
-        </div>
+            <h1>한국의 국내외 입양 추세</h1>
+            <p>보건복지부의 가정위탁국내입양소년소녀가정현황 통계에 따르면, 2000년부터 2018년까지 <b>총 입양 건수와 그 추세</b>는 다음 그래프와 같다.</p>
+            <div class="margin"></div>
+            <svg id="myGraph"></svg>
+            <div class="margin"></div>
+            <p>보건복지부의 가정위탁국내입양소년소녀가정현황 통계에 따르면, 2000년부터 2018년까지 <b>국내외 입양 건수 비율</b>은 다음 그래프와 같다.</p>
+            <svg id="myGraph2"></svg>
+            <div class="one">
+                <h1>한국에서 추진한 입양관련 제도</h1>
+                <p>
+                    국외 입양을 수를 감축시키기 위해, 2000년대부터 한국 정부는 다양한 제도를 추진해 왔었다. 그 중 입양 추세에 영향을 미친 제도는 다음과 같다. 
+                    <br><b>1.국내입양우선제도(쿼터제)</b>: 입양대상 선정 후 5개월 간 국내입양을 우선적으로 추진하는 제도 
+                    <br>○ 도입 시기인 2007년을 기점으로 국내입양 비율이 국외입양 비율 보다 높아지기 시작함
+                    <br>○ 전체적인 추세로 봤을 때 하락한 국외 입양만큼 국내 입양이 활성화되지 않았기 때문에, 도입한 쿼터제가 오히려 국내 입양까지 감소시킨다는 분석이 존재함
+                    <br><b>2.입양특례법 개정</b>: 아동의 행복, 아동의 권리·이익 보호법. 2012년에 아이 양육에 관해 일정 기간동안 충분히 생각해서 신중하게 결정하도록 강화 개정되었음. 
+                    <br>○ 2012년 8월에 개정안이 시행되면서, 국내 입양이 급격한 감소 추세를 보임 
+                    <br>○ 입양 절차에 대한 강화되면서 입양 절차 조건과 과정이 까다롭게 변화되었음. 전체적으로 취지는 좋았으나, 현실적으로 많은 입양아들이 대기를 해야하는 상황이 발생
+                    <br>○ 영아 매매 사건과 같이, 입양 특례법의 허점들이 들어남
+                </p>
+                <h1>국내입양 개선방향 </h1>
+                <p>
+                    입양은 개인, 가족, 집단을 넘어 지역사회와 국가의 문화 및 정책적인 부분까지 모두 고려되는 복합적인 복지서비스이다. 이와 관련하여 많은 제도가 시행되고 있지만, 아직은 가시적인 효과가 나타나지 않는 실정이다. 다음 그래프와 같이 보호대상아동의 수는 입양 규모에 비해 여전히 많기 때문에, 국가적 차원에서 현실적인 제도 변혁이 필요하다. 또한, 교육을 통해 혈연중심에 대한 사고를 버리고 가족구성에 대한 확장적인 사고 계몽이 필요하다.
+                </p>
+            </div>
+            <div class="row1"></div>
+            <div class="one">
+                <h1>데이터 출처</h1>
+                <p>
+                    <a href="http://kosis.kr/statisticsList/statisticsListIndex.do?menuId=M_01_01&vwcd=MT_ZTITLE&parmTabId=M_01_01&parentId=D.1;D3.2;D3_460.3;#D3_460.3" target="blank_">보건복지부 내부자료: 가정위탁국내입양소년소녀가정현황</a>
+                    <sub>
+                        <br>○입양 아동수(2001~2018)
+                        <br>○입양 아동비율(2001~2018)
+                    </sub>
+                </p>
+                <h1>문헌 출처</h1>
+                <p>
+                    <a href="http://incrc.org/column/?mod=document&uid=16" target="blank_">[국내아동인권센터] 입양제도는 누구를 위하여 무엇을 위하여 존재하는가</a>
+                    <br><a href="http://www.peoplepower21.org/Welfare/1227953" target="blank_">[참여연대] [기획주제4] 국내입양 현황과 개선방안</a>
+                    <br><a href="https://www.seoul.co.kr/news/newsView.php?id=20110511010009" target="blank_">[서울신문] ‘해외입양 쿼터제’가 국내입양까지 줄여</a>
+                    <br><a href="https://www.yna.co.kr/view/MYH20160117013900038" target="blank_">[연합뉴스] [현장 IN] "취지는 좋지만…" 현실 무시한 입양특례법</a>
+                </p>
+            </div>
+        </div>       
+        <script src="mycode.js"></script>
+        <script src="mycode2.js"></script>
         <!-- End of Main Container -->
         
         <!-- 이 아래부터는 무시하세요! -->
