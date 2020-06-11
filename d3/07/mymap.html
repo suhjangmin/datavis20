@@ -7,6 +7,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            /* 폰트 설정 */
+            @font-face{
+                src: url("07/NanumSquareR.ttf");
+                font-family: "nanumR"
+            }
+            @font-face{
+                src: url("07/NanumSquareB.ttf");
+                font-family: "nanumB"
+            }
+            *{
+                font-family: "nanumR"
+            }
+            .contain{
+                width: 900px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1{
+                font-size: 24px;
+                font-family: "nanumB";
+                color: #212529;
+                padding-top: 40px;
+            }
+            p{
+                padding-top: 8px;
+                text-align: justify;
+                line-height: 30px;
+                font-size: 15px;
+            }
+            #check{
+                color: red;
+            }
+            .margin{
+                height: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: #1971c2;
+            }
+        </style>
 
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
         <title>Title</title>
@@ -30,15 +73,34 @@
         <!-- 과제는 여기서 부터 시작입니다 -->
 
         <!-- Main Container -->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-
-
+        <div class="contain">
+            <div class="one">
+                <h1>2018년 1인가구비율 (시도/시/군/구)</h1>
+                <a href="single_household.html" target="blank_"><img src="07/img02.png" width="900px"></a>
+                <p id="check">*이미지 클릭 시, kepler.gl 지도 확인 가능</p>
+                <div class="contain">
+                    <b>데이터 출처</b>
+                    <p><통계청 지역통계총괄과 [2018년 1인가구비율(시도/시/군/구)] 통계자료 (자료갱신일: 2020년 03월 25일)</p>
+                    <b>표현</b>
+                    <p>
+                        -1인 가구 수: Blue Purple
+                        <br>-전체 가구 수: Indigo 
+                        <br>-인구 수: Light Gray
+                    </p>
+                    <b>기준</b>
+                    <p>
+                        -대한민국의 8개 시
+                        <br>-가구 수 Radius 크기 비율: 20-200으로 통일 
+                        <br>-인구 수 Radius 크기 비율: 50-300으로 통일 (가구 수와 비교 용이하게 하기 위해 2배 이상 크기 지정) 
+                    </p>
+                    <b>인사이트</b>
+                    <p>
+                        -8개의 도시 중 <b>'서울시'</b>는 전체 가구 수만큼, 1인 가구 수는 많은 편임. 즉, 전체 가구 수 중 <b>많은 비율이 1인 가구인 도시</b>임. 
+                        <br>-인천시, 세종시, 울산시, 대구시, 광주시, 부산시 순으로  비교적 전체 가구 수만큼, 1인 가구 수는 적은 편임. 특히, <b>인천시, 세종시, 울산시</b>는 전체 가구 수 중 <b>1인 가구 형태가 적은 도시</b>임.  
+                    </p> 
                 </div>
             </div>
-        </div>
+        </div>       
         <!-- End of Main Container -->
         
 
