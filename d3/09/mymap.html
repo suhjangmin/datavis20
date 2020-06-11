@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
-        <title>Title</title>
+        <title>서울시 독거노인 현황</title>
     </head>
 
     <body>
@@ -33,7 +33,164 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [],
+      "layers": [
+        {
+          "id": "8337lz",
+          "type": "point",
+          "config": {
+            "dataId": "ck66daxqk",
+            "label": "Point",
+            "color": [
+              255,
+              203,
+              153
+            ],
+            "columns": {
+              "lat": "latitude",
+              "lng": "longitude",
+              "altitude": null
+            },
+            "isVisible": true,
+            "visConfig": {
+              "radius": 48.4,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "strokeColor": null,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "strokeColorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radiusRange": [
+                0,
+                124.7
+              ],
+              "filled": true
+            },
+            "hidden": false,
+            "textLabel": [
+              {
+                "field": null,
+                "color": [
+                  255,
+                  255,
+                  255
+                ],
+                "size": 18,
+                "offset": [
+                  0,
+                  0
+                ],
+                "anchor": "start",
+                "alignment": "center"
+              }
+            ]
+          },
+          "visualChannels": {
+            "colorField": null,
+            "colorScale": "quantile",
+            "strokeColorField": null,
+            "strokeColorScale": "quantile",
+            "sizeField": {
+              "name": "population",
+              "type": "integer"
+            },
+            "sizeScale": "sqrt"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "ck66daxqk": [
+              {
+                "name": "location",
+                "format": null
+              },
+              {
+                "name": "population",
+                "format": null
+              }
+            ]
+          },
+          "enabled": true
+        },
+        "brush": {
+          "size": 0.5,
+          "enabled": false
+        },
+        "geocoder": {
+          "enabled": false
+        },
+        "coordinate": {
+          "enabled": false
+        }
+      },
+      "layerBlending": "normal",
+      "splitMaps": [],
+      "animationConfig": {
+        "currentTime": null,
+        "speed": 1
+      }
+    },
+    "mapState": {
+      "bearing": 0,
+      "dragRotate": false,
+      "latitude": 37.55490010070943,
+      "longitude": 126.93573711515435,
+      "pitch": 0,
+      "zoom": 10.635059495164644,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "dark",
+      "topLayerGroups": {},
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "border": false,
+        "building": true,
+        "water": true,
+        "land": true,
+        "3d building": false
+      },
+      "threeDBuildingColor": [
+        9.665468314072013,
+        17.18305478057247,
+        31.1442867897876
+      ],
+      "mapStyles": {}
+    }
+  }
+}
 
 
                 </div>
